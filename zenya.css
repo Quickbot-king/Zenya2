@@ -248,6 +248,7 @@ border: 2px solid #9775fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
    
 }
 .nav-btn-container{
@@ -260,6 +261,11 @@ border: 2px solid #9775fa;
     min-height: 400px;
     text-align: center;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 250px 0;
 }
 #hero-heading{
     margin-bottom: 1rem;
