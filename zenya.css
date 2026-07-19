@@ -852,3 +852,356 @@ border: 2px solid #9775fa;
     }
 
 }
+/* 
+/* ==========================================
+   ABOUT PAGE (NEW)
+   Add to the END of zenya.css
+========================================== */
+
+/* Main wrapper */
+.about-container{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+}
+
+/* ------------------------------------------
+   HERO
+------------------------------------------ */
+
+.about-hero{
+    text-align:center;
+    padding:6rem 0 8rem;
+}
+
+.about-hero h1{
+    margin-bottom:2rem;
+    color:var(--grey-shade);
+}
+
+.about-hero p{
+    max-width:900px;
+    margin:0 auto;
+    font-size:2rem;
+    color:var(--grey-base);
+}
+
+/* ------------------------------------------
+   ABOUT CONTENT
+------------------------------------------ */
+
+.about-section{
+    padding:5rem 0;
+}
+
+.about-card{
+    background:#fff;
+    padding:4rem;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    margin-bottom:4rem;
+}
+
+.about-card h2{
+    color:var(--primary-base);
+    margin-bottom:2rem;
+}
+
+.about-card p{
+    margin-bottom:2rem;
+}
+
+/* ------------------------------------------
+   TWO COLUMN
+------------------------------------------ */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:4rem;
+    margin:4rem 0;
+}
+
+.info-box{
+    background:#f1f3f5;
+    border-radius:12px;
+    padding:3rem;
+    box-shadow:0 6px 15px rgba(0,0,0,.05);
+}
+
+.info-box h3{
+    color:var(--secondary-shade);
+    margin-bottom:2rem;
+}
+
+.info-box p{
+    margin-bottom:1.5rem;
+}
+
+/* ------------------------------------------
+   SERVICES
+------------------------------------------ */
+
+.services-section{
+    padding:6rem 0;
+}
+
+.services-title{
+    text-align:center;
+    margin-bottom:5rem;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:3rem;
+}
+
+.service-card{
+    background:#f1f3f5;
+    padding:3rem;
+    border-radius:12px;
+    transition:.3s ease;
+    box-shadow:0 6px 15px rgba(0,0,0,.05);
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.service-card h3{
+    color:var(--primary-base);
+    margin-bottom:1.5rem;
+    font-size:2.6rem;
+}
+
+.service-card p{
+    font-size:1.8rem;
+}
+
+/* ------------------------------------------
+   VALUES
+------------------------------------------ */
+
+.values-section{
+    padding:6rem 0;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+}
+
+.value-card{
+    text-align:center;
+    background:#fff;
+    border:2px solid var(--primary-tint);
+    border-radius:12px;
+    padding:3rem 2rem;
+    transition:.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary-base);
+}
+
+.value-card h4{
+    font-size:2.2rem;
+    margin-bottom:1rem;
+    color:var(--secondary-shade);
+}
+
+.value-card p{
+    font-size:1.7rem;
+}
+
+/* ------------------------------------------
+   COMMITMENT
+------------------------------------------ */
+
+.commitment{
+    background:var(--primary-tint);
+    border-radius:20px;
+    padding:5rem;
+    margin:6rem 0;
+}
+
+.commitment h2{
+    margin-bottom:2rem;
+}
+
+.commitment p:last-child{
+    margin-bottom:0;
+}
+
+/* ------------------------------------------
+   BLOG INTRO
+------------------------------------------ */
+
+.resources-section{
+    padding:6rem 0;
+}
+
+.resources-section h2{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.resources-section>p{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 5rem;
+}
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:3rem;
+}
+
+.resource-card{
+    background:#fff;
+    border-radius:12px;
+    padding:3rem;
+    box-shadow:0 6px 15px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.resource-card:hover{
+    transform:translateY(-5px);
+}
+
+.resource-card h3{
+    color:var(--primary-base);
+    margin-bottom:1.5rem;
+}
+
+.resource-card p{
+    font-size:1.8rem;
+}
+
+/* ------------------------------------------
+   FINAL CTA
+------------------------------------------ */
+
+.about-cta{
+    margin:8rem auto;
+    max-width:1000px;
+    background:var(--secondary-base);
+    color:#fff;
+    border-radius:20px;
+    padding:6rem;
+    text-align:center;
+}
+
+.about-cta h2{
+    color:#fff;
+    margin-bottom:2rem;
+}
+
+.about-cta p{
+    color:#fff;
+    max-width:800px;
+    margin:0 auto 3rem;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1024px){
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.resource-grid{
+grid-template-columns:1fr;
+}
+
+.values-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.commitment{
+padding:4rem 3rem;
+}
+
+}
+
+/* ------------------------------------------ */
+
+@media(max-width:768px){
+
+.about-hero{
+padding:4rem 0;
+}
+
+.about-hero h1{
+font-size:4rem;
+}
+
+.about-card{
+padding:3rem 2rem;
+}
+
+.info-box{
+padding:2.5rem;
+}
+
+.service-card{
+padding:2.5rem;
+}
+
+.value-card{
+padding:2rem;
+}
+
+.values-grid{
+grid-template-columns:1fr;
+}
+
+.commitment{
+padding:3rem 2rem;
+}
+
+.about-cta{
+padding:4rem 2rem;
+margin:6rem auto;
+}
+
+.about-cta h2{
+font-size:3.2rem;
+}
+
+}
+
+/* ------------------------------------------ */
+
+@media(max-width:480px){
+
+.about-hero h1{
+font-size:3.4rem;
+}
+
+.about-hero p,
+.about-card p,
+.service-card p,
+.resource-card p,
+.info-box p{
+font-size:1.7rem;
+}
+
+.about-card,
+.resource-card{
+padding:2rem;
+}
+
+}
